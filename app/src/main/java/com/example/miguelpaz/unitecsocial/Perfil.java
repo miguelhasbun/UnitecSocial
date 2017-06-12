@@ -48,6 +48,7 @@ public class Perfil extends AppCompatActivity {
 
                 Toast.makeText(Perfil.this, opcionseleccionada, Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(menuLateral);
+                ejecutar();
 
             }
 
