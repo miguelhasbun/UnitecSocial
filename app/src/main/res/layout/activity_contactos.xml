@@ -10,12 +10,16 @@
     <EditText
         android:id="@+id/txtbuscar"
         android:hint="BUSCAR CONTACTO"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
     <ListView
         android:id="@+id/listview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="53dp"
+        tools:layout_editor_absoluteX="10dp">
 
     </ListView>
 

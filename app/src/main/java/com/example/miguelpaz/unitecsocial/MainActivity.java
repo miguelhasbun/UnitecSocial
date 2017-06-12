@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void callperfil(View view){
         Toast.makeText(this, "Credenciales aceptadas.", Toast.LENGTH_SHORT).show();
-        Intent i= new Intent(this,  Contactos.class);
+        Intent i= new Intent(this, Perfil.class);
         startActivity(i);
     }
 }
