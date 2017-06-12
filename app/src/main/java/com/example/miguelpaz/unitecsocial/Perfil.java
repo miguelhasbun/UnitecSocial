@@ -18,7 +18,7 @@ public class Perfil extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private LinearLayout mainLayout;
     private ListView menuLateral;
-
+    static String op="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String opcionseleccionada= (String)menuLateral.getAdapter().getItem(position);
-
+                op=opcionseleccionada;
 
                 Toast.makeText(Perfil.this, opcionseleccionada, Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(menuLateral);
@@ -85,4 +85,20 @@ public class Perfil extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void setOp(String o)
+    {
+        this.op=o;
+    }
+
+    public void ejecutar(){
+        if(op.equals(""))
+            return;
+        else if(op.equals("Notificaciones")){
+            Intent ij = new Intent(this, Notificaciones.class);
+            startActivity(ij);
+        }
+        setOp("");
+    }
+
 }
