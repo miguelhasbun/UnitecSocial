@@ -1,26 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="com.example.miguelpaz.unitecsocial.Contactos">
+    >
     <EditText
         android:id="@+id/txtbuscar"
-        android:hint="BUSCAR CONTACTO"
-        android:layout_width="348dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        android:hint="Buscar Contacto"
+        android:drawableLeft="@drawable/lupa"
+
+
+        />
     <ListView
         android:id="@+id/listview"
-        android:layout_width="0dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="53dp"
-        tools:layout_editor_absoluteX="10dp">
+        >
 
     </ListView>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

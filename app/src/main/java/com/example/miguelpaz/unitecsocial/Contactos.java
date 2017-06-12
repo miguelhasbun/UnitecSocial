@@ -30,16 +30,18 @@ public class Contactos extends AppCompatActivity {
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                if (s.toString().equals("")){
-                    initlist();
-                }else{
-                    buscarItem(s.toString());
-                }
+
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (s.toString().equals("")){
+                    initlist();
+                }else{
 
+                    buscarItem(s.toString());
+
+                }
             }
 
             @Override
@@ -54,6 +56,7 @@ public class Contactos extends AppCompatActivity {
     public void buscarItem(String texto){
         for (String i:item){
             if (!i.contains(texto)){
+
                 listitem.remove(i);
             }
 
@@ -62,7 +65,7 @@ public class Contactos extends AppCompatActivity {
     }
 
     public void initlist(){
-        item= new String[]{"","", "Juan", "José", "Reiner", "Dávila", "Méndez", "David", "Andy", "Esther", "Boris"};
+        item= new String[]{"Juan", "José", "Reiner", "Boris", "Esther"};
         listitem= new ArrayList<>(Arrays.asList(item));
         adapter= new ArrayAdapter<String>(this, R.layout.list_item, R.id.txtitem, listitem);
         listView.setAdapter(adapter);
