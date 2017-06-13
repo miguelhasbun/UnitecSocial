@@ -54,7 +54,6 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/toolbar"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_above="@+id/eDEscribirMensaje"
             tools:listitem="@layout/card_view_mensajes"
             ></android.support.v7.widget.RecyclerView>

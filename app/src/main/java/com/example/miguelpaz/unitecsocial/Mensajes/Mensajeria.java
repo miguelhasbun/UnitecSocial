@@ -1,5 +1,6 @@
 package com.example.miguelpaz.unitecsocial.Mensajes;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
@@ -115,5 +116,10 @@ public class Mensajeria extends AppCompatActivity {
 
     public void setScrollbarChat(){
         rv.scrollToPosition(adapter.getItemCount()-1);
+    }
+
+    public void callmensajes(){
+        Intent i= new Intent(this, Mensajeria.class);
+        startActivity(i);
     }
 }

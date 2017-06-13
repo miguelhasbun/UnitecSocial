@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.miguelpaz.unitecsocial.Configuracion">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="48dp"
+            android:enabled="false"
+            android:drawableLeft="@drawable/llave"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text=" Configuración"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button7"
+            android:drawableLeft="@drawable/estrella"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText4"
+            android:layout_marginLeft="11dp"
+
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="31dp"
+            android:onClick="callreproductor"
+            android:text="Sonido de Notificaciones" />
+
+        <Button
+            android:id="@+id/button8"
+            android:drawableLeft="@drawable/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignStart="@+id/button7"
+            android:layout_below="@+id/button7"
+            android:layout_marginTop="47dp"
+            android:onClick="bloqueo"
+            android:text="Contactos Bloqueados" />
+
+        <Button
+            android:id="@+id/button10"
+            android:drawableLeft="@drawable/llave2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="41dp"
+            android:onClick="ajustes"
+            android:text="Ajustes de Perfil"
+            android:layout_below="@+id/button8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/button8"
+            android:layout_alignStart="@+id/button8" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

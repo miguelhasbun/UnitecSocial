@@ -13,6 +13,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.miguelpaz.unitecsocial.Mensajes.Mensajeria;
+
 public class Perfil extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -34,7 +36,7 @@ public class Perfil extends AppCompatActivity {
         mainLayout= (LinearLayout)findViewById(R.id.mainLayout);
         menuLateral= (ListView)findViewById(R.id.menuLateral);
 
-        final String[] opciones={"Perfil", "Notificaciones", "Agregar Contacto", "Contactos", "Chats", "Configuraciones"};
+        final String[] opciones={"Perfil", "Notificaciones","Contactos", "Chats", "Configuraciones"};
         ArrayAdapter<String> adp= new ArrayAdapter<String>(Perfil.this, android.R.layout.simple_list_item_1, opciones);
         menuLateral.setAdapter(adp);
 
@@ -54,16 +56,6 @@ public class Perfil extends AppCompatActivity {
 
         });
 
-
-        /*For fallido
-           for (int i=0; i<opciones.length; i++) {
-                    if (opciones[i].equals("Notificaciones")) {
-                        Intent ij = new Intent(this, Notificaciones.class);
-                        startActivity(ij);
-
-                    }
-                }
-         */
 
 
     }
@@ -98,8 +90,22 @@ public class Perfil extends AppCompatActivity {
         else if(op.equals("Notificaciones")){
             Intent ij = new Intent(this, Notificaciones.class);
             startActivity(ij);
+        }else if (op.equals("Contactos")){
+            Intent ia= new Intent(this, Contactos.class);
+            startActivity(ia);
+        }else  if(op.equals("Chats")){
+            Intent iq= new Intent(this, Mensajeria.class);
+            startActivity(iq);
+        }else if(op.equals("Configuraciones")){
+            Intent id= new Intent(this, Configuracion.class);
+            startActivity(id);
         }
         setOp("");
+    }
+
+    public void chats(View view){
+        Intent i= new Intent(this, Mensajeria.class);
+        startActivity(i);
     }
 
 }
