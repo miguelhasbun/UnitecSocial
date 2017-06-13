@@ -29,7 +29,8 @@
         <activity android:name=".Notificaciones" />
         <activity android:name=".Contactos" />
         <activity android:name=".Configuracion" />
-        <activity android:name=".Reproductor"></activity>
+        <activity android:name=".Reproductor" />
+        <activity android:name=".AgregarContacto"></activity>
     </application>
 
 </manifest>

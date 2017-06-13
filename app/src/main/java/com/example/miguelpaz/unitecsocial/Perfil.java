@@ -36,7 +36,7 @@ public class Perfil extends AppCompatActivity {
         mainLayout= (LinearLayout)findViewById(R.id.mainLayout);
         menuLateral= (ListView)findViewById(R.id.menuLateral);
 
-        final String[] opciones={"Perfil", "Notificaciones","Contactos", "Chats", "Configuraciones"};
+        final String[] opciones={"Perfil", "Notificaciones","Agregar Contacto", "Contactos", "Chats", "Configuraciones"};
         ArrayAdapter<String> adp= new ArrayAdapter<String>(Perfil.this, android.R.layout.simple_list_item_1, opciones);
         menuLateral.setAdapter(adp);
 
@@ -99,7 +99,11 @@ public class Perfil extends AppCompatActivity {
         }else if(op.equals("Configuraciones")){
             Intent id= new Intent(this, Configuracion.class);
             startActivity(id);
+        }else if (op.equals("Agregar Contacto")){
+            Intent a= new Intent(this, AgregarContacto.class);
+            startActivity(a);
         }
+
         setOp("");
     }
 

@@ -56,7 +56,22 @@
             android:layout_alignParentLeft="true"
             android:layout_above="@+id/eDEscribirMensaje"
             tools:listitem="@layout/card_view_mensajes"
+
             ></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="En línea con Juan"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btEnviarMensaje"
+            android:layout_toStartOf="@+id/btEnviarMensaje"
+            android:layout_marginRight="61dp"
+            android:layout_marginEnd="61dp" />
     </RelativeLayout>
 
 </LinearLayout>
