@@ -25,10 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Intent i= new Intent(this, Perfil.class);
         startActivity(i);
     }
-    public void callmensajes(View view){
-        Intent i= new Intent(this, Mensajeria.class);
-        startActivity(i);
-    }
+
 
     public void callreproductor(View view){
         Intent i= new Intent(this, Reproductor.class);

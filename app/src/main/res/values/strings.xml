@@ -9,4 +9,23 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="arreglo">
+        <item>Carreras</item>
+        <item>Ingenieria en Sistemas</item>
+        <item>Ingenieria en Mecatronica</item>
+        <item>Ingenieria Industrial</item>
+    </string-array>
+
+
+    <string-array name="Contactos">
+        <item>Esther</item>
+        <item>Mario</item>
+        <item>Boris</item>
+        <item>David</item>
+        <item>Jaime</item>
+        <item>Juan</item>
+        <item>Sergio</item>
+    </string-array>
 </resources>

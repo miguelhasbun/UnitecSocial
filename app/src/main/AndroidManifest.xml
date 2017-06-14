@@ -30,7 +30,8 @@
         <activity android:name=".Contactos" />
         <activity android:name=".Configuracion" />
         <activity android:name=".Reproductor" />
-        <activity android:name=".AgregarContacto"></activity>
+        <activity android:name=".AgregarContacto" />
+        <activity android:name=".Busqueda_General"></activity>
     </application>
 
 </manifest>

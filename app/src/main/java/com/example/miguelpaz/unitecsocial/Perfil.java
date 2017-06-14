@@ -100,7 +100,7 @@ public class Perfil extends AppCompatActivity {
             Intent id= new Intent(this, Configuracion.class);
             startActivity(id);
         }else if (op.equals("Agregar Contacto")){
-            Intent a= new Intent(this, AgregarContacto.class);
+            Intent a= new Intent(this, Busqueda_General.class);
             startActivity(a);
         }
 
